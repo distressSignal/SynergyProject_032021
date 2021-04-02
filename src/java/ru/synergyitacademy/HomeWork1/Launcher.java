@@ -1,4 +1,7 @@
-package ru.synergyitacademy;
+package ru.synergyitacademy.HomeWork1;
+
+import java.io.*;
+import java.util.Scanner;
 
 public class Launcher {
 
@@ -12,5 +15,9 @@ public class Launcher {
         //TODO: переписать данный код
         // Выведется в консоль фраза Привет, мир!
         System.out.println("Привет, мир!");
+        System.out.println("g");
+        System.out.println("a.s");
+
+
     }
 }
