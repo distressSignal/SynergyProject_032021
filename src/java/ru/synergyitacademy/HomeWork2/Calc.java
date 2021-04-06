@@ -14,6 +14,7 @@ public class Calc {
 
 
         } catch (IOException e) {
+
             e.printStackTrace();
         }
 
@@ -23,6 +24,7 @@ public class Calc {
 
         String num1 = cif[0];
         String num2 = cif[1];
+        System.out.println("n");
 
 
         boolean b = (num1.contains(".")) || (num1.contains(",")) || (num2.contains(".")) || (num2.contains(","));// Todo ПоКнять, целое число или нет. а дальше использовать метод
