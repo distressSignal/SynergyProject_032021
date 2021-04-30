@@ -24,13 +24,13 @@ public class Human extends Cat {
 
     @Override
     double run() {
-        System.out.print("Человек пробежал");
+        System.out.print("Человек: "+name+" пытается пробежать");
         return this.run;
     }
 
     @Override
     double jump() {
-        System.out.print("Человек пытается прыгнуть...");
+        System.out.print("Человек: "+name+" пытается прыгнуть...");
         return this.jump;
     }
 }

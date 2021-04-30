@@ -19,7 +19,7 @@ public class Robot extends Human{
 
     @Override
     double run() {
-        System.out.print("Робот пробежал ");
+        System.out.print("Робот пытается бежать...");
         return this.run;
     }
 

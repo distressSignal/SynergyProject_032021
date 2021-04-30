@@ -1,17 +1,7 @@
 package ru.synergyitacademy.HomeWork7;
 
 public interface Obstacles {
+    abstract boolean passed(double jump);
 
-    boolean ok =true;
-
-    default void jump(double jump) {
-    }
-
-    default void run(double run) {
-    }
-
-    default boolean isOk() {
-        return ok;
-    }
 }
 
