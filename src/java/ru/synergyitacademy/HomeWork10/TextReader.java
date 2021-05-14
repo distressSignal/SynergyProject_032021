@@ -14,7 +14,6 @@ public class TextReader {
         String max = textsArr[1];
 
         for (int i = 0; i < textsArr.length; i++) {
-            System.out.println(textsArr[i] + " " + textsArr[i].length());
             if (textsArr[i].length() < min.length()) {
                 min = textsArr[i];
             }
