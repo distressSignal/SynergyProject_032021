@@ -22,7 +22,7 @@ public class TextReader {
             }
         }
 
-        System.out.println(min);
-        System.out.println(max);
+        System.out.println("Самое короткое слово: " + min + "\nСамое длинное слово: " + max + "\nслов " + textsArr.length);
+
     }
 }
