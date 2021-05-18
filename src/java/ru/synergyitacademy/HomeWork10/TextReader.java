@@ -21,8 +21,6 @@ public class TextReader {
                 max = textsArr[i];
             }
         }
-
         System.out.println("Самое короткое слово: " + min + "\nСамое длинное слово: " + max + "\nслов " + textsArr.length);
-
     }
 }
