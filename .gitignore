@@ -2,3 +2,6 @@
 /out/
 /.idea/
 *.iml
+/src/java/ru/synergyitacademy/test/
+/src/java/ru/synergyitacademy/test2/
+/src/java/test3/
