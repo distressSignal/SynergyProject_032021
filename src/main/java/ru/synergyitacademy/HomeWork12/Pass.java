@@ -10,7 +10,7 @@ public class Pass implements Car {
         this.weight = 1 + (int) (Math.random() * 12);
         this.height = 1 + (int) (Math.random() * 5);
         this.length = 3 + (int) (Math.random() * 15);
-        this.width = 0.5 + (double) (Math.random() * 3);
+        this.width = 0.5 + (Math.random() * 3);
     }
 
     public int getNumber() {
@@ -49,7 +49,7 @@ public class Pass implements Car {
     }
 
     @Override
-    public void overelCar(KPP kpp) throws WeightException, HeightException, WidthException {
+    public void overelCar(Kpp kpp) throws WeightException, HeightException, WidthException {
         if (getWeight() > kpp.getWeight()) {
             throw new WeightException("Авто с №" + getNumber() + " не прошло контроль по весу.");
         } else if (getHeight() > kpp.getHeight()) {

@@ -37,19 +37,17 @@ public class Cargo implements Car {
         return width;
     }
 
-    @Override
     public void speedRun() throws MaxSpeedExc80, MaxSpeedExc100 {
         if (getSpeed() < 80) {
             System.out.println("Машина с номером: " + getNumber() + " движется со скоростью" + getSpeed());
         } else if (getSpeed() < 100) {
-            throw new MaxSpeedExc80("Машина с номером: " + getNumber() + " движется со скоростью быстрее чем 80 ");
+            throw new MaxSpeedExc80("Машина с номером: " + getNumber() + " движется со скоростью быстрее чем 80 " + getSpeed());
         } else {
-            throw new MaxSpeedExc100("Авто с номером:" + getNumber() + " задержано полицией");
+            throw new MaxSpeedExc100("Авто с номером:" + getNumber() + " задержано полицией" + getSpeed());
         }
     }
-
     @Override
-    public void overelCar(KPP kpp) throws WeightException, HeightException, WidthException {
+    public void overelCar(Kpp kpp) throws WeightException, HeightException, WidthException {
         if (getWeight() > kpp.getWeight()) {
             throw new WeightException("Авто с №" + getNumber() + " не прошло контроль по весу.");
         } else if (getHeight() > kpp.getHeight()) {
@@ -61,4 +59,6 @@ public class Cargo implements Car {
         }
 
     }
+
+
 }
